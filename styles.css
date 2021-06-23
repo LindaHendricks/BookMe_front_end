@@ -1,0 +1,202 @@
+
+ h1 {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: Montserrat, "Helvetica Neue"
+
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+#videoLinda {
+  position:fixed;
+  z-index: -1;
+}
+  
+@media (min-aspect-ratio: 16/9) {
+  #videoLinda {
+    width:100%;
+    height:auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoLinda {
+    width:auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #videoLinda {
+    display:none;
+  }
+  
+  body {
+    background: url(`poster2.png`);
+    background-size: cover
+
+  }
+}
+  
+p {
+  color: white;
+  text-align: center
+}
+
+h4 {
+  color: white;
+  text-align: center
+}
+  
+  /* div {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    /* text-align: center; */
+    
+  /* } */
+
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  /* div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  /* .container {
+    padding: 2px 16px;
+  }  */
+
+  #model-detail {
+    position: relative;
+  }
+
+
+ 
+
+   h2{
+
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    /* border-radius: 5px; 5px rounded corners */
+    text-align: center;
+    color: white;
+
+   }
+
+  form {
+
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s; */
+    /* border-radius: 5px; 5px rounded corners */
+    text-align: center;
+    padding: 50px 50px 50px 50px; 
+    color: white
+
+
+  }
+
+  /* .fontapp {
+
+    font-family: 'Roboto Slab', serif;
+
+  } */
+
+  button {
+    padding: 15px 15px 15px 15px;
+    margin: 20px;
+    border-radius: 35px;
+    border: none;
+    letter-spacing: .2rem;
+  }
+
+  input { 
+      margin-bottom: 30px; 
+      border-radius: 20px;
+      padding: 15px; 
+      width: 300px;
+      height: 1px; 
+      border: none
+       
+  }
+  
+  .info {
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    /* transition: 0.3s; */
+    /* border-radius: 5px; 5px rounded corners */
+    /* border: 20px; */
+    text-align: center;
+    padding: 50px 50px 50px 50px
+  }
+
+  label {
+    font-size: 40;
+    letter-spacing: .2rem;
+    padding-bottom: 10px;
+  }
+  
+.onephotographer {
+
+  border: none;
+  margin: 40px 250px 40px 250px;
+  border-radius: 30px;
+  background: rgba(73, 66, 66, 0.5);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px
+ 
+}
+
+
+.newShooting {
+  padding-top: 2px;
+  
+}
+ 
+.divcard{
+  border: none;
+  margin: 40px 250px 40px 250px;
+  border-radius: 30px;
+  background: rgba(73, 66, 66, 0.5);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px
+}
+
+.shootingconfirmed {
+  border: none;
+  margin: 40px 250px 40px 250px;
+  border-radius: 30px;
+  background: rgba(73, 66, 66, 0.5);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px
+  
+}
+
+.format {
+  border: none;
+  margin: 40px 250px 40px 250px;
+  border-radius: 30px;
+  background: rgba(73, 66, 66, 0.5);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px
+}
