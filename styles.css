@@ -1,3 +1,14 @@
+/* @font-face {
+  font-family: "montserrat";
+  src: url("montserrat.woff2");
+} */
+
+html {
+  /* font-family: "montserrat", "Bitstream Vera Serif", serif; */
+   font-family: Times
+}
+
+
 h1 {
   transition: 0.3s;
   border-radius: 5px;
@@ -6,7 +17,10 @@ h1 {
   color: #ffffff;
   padding: 20px;
   margin-top: 20px;
-  font-family: Montserrat, "Helvetica Neue";
+  /* font-family: Montserrat, "Helvetica Neue"; */
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px
 }
 
 body {
@@ -16,21 +30,26 @@ body {
 p {
   color: white;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 h4 {
   color: white;
   text-align: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 img {
-  border-radius: 5px 5px 0 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 h2 {
   transition: 0.3s;
   text-align: center;
   color: white;
+  padding-bottom:30px
 }
 
 form {
@@ -41,7 +60,7 @@ form {
 
 button {
   padding: 15px 15px 15px 15px;
-  margin: 20px;
+  margin-top: 10px;
   border-radius: 35px;
   border: none;
   letter-spacing: 0.2rem;
@@ -49,6 +68,7 @@ button {
 
 input {
   margin-bottom: 30px;
+  margin-top: 4px;
   border-radius: 20px;
   padding: 15px;
   width: 300px;
@@ -64,7 +84,7 @@ input {
 label {
   font-size: 40;
   letter-spacing: 0.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .onephotographer {
@@ -72,8 +92,8 @@ label {
   margin: 40px 250px 40px 250px;
   border-radius: 30px;
   background: rgba(73, 66, 66, 0.5);
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -95,7 +115,7 @@ label {
 
 .shootingconfirmed {
   border: none;
-  margin: 40px 250px 40px 250px;
+  margin: 40px 250px 500px 250px;
   border-radius: 30px;
   background: rgba(73, 66, 66, 0.5);
   padding-top: 15px;
@@ -120,7 +140,6 @@ label {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border-radius: 30px;
 }
 
 #portfoliomodel {
@@ -134,9 +153,9 @@ label {
 
 #createprofile {
   border: none;
-  margin: 40px 150px 40px 150px;
+  margin: 40px 150px 0px 150px;
   border-radius: 30px;
-  background: rgba(73, 66, 66, 0.5);
+  /* background: rgba(73, 66, 66, 0.5); */
   padding-top: 15px;
   padding-bottom: 5px;
   padding-right: 20px;
@@ -175,4 +194,52 @@ label {
     background: url(`poster2.png`);
     background-size: cover;
   }
+}
+
+#enter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#entertitle {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 40px; 
+}
+
+#entertitle2 {
+  margin-top: 150px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 30px; 
+  padding: 10px 10px 10px 10px
+}
+
+#entryform {
+  padding: 50px 50px 50px 50px;
+}
+
+
+
+#createprofile {
+  margin-top: 200px;
+}
+
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
 }

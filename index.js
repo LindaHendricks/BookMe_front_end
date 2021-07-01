@@ -1,7 +1,7 @@
 const apiFashiongirls = `http://localhost:3000/fashiongirls`;
 const createProfileForm = document.querySelector(`form#createprofile`);
 
-const enter = document.querySelector(`.enter`);
+const enter = document.querySelector(`#enter`);
 enter.addEventListener(`click`, (event) => {
   renderEntryForm();
 });
@@ -12,9 +12,9 @@ function renderEntryForm() {
   parentDiv.textContent = "";
 
   div.innerHTML = `
-       
+     
         <form id="createprofile">
-        <h2>Create your profile now!</h2>
+        <h1 id="entertitle2">CREATE YOUR PROFILE</h1>
         <label for="fname">Name:</label><br>
         <input type="text" id="fname" name="name"><br>
            
@@ -35,8 +35,7 @@ function renderEntryForm() {
   const createProfileForm = document.querySelector(`form#createprofile`);
   createProfileForm.addEventListener(`submit`, (event) => {
     event.preventDefault();
-    console.log("submit", event.target);
-
+    
     const inputName = document.querySelector(`#fname`);
     const inputAge = document.querySelector(`#lage`);
     const inputLocation = document.querySelector(`#flocation`);
@@ -144,7 +143,10 @@ function renderEntryForm() {
 
         const createProfileFormBye =
           document.querySelector(`form#createprofile`);
-        createProfileFormBye.textContent = "";
+        // createProfileFormBye.textContent = "";
+
+        createProfileFormBye.remove()
+
       } else if (event.target.matches(`button#apho`)) {
         fetch(`http://localhost:3000/photographers`)
           .then((response) => response.json())
@@ -185,16 +187,13 @@ function renderEntryForm() {
                 
    
                  <div class="onephotographer">
-                   <h2>Discover ${photographer.name}</h2> 
+                   <h2> DISCOVER ${photographer.name}'S BOOK </h2> 
                      <p class="name">Name: ${photographer.name}</p>
                      <p class="location">Location: ${photographer.location}</p>
-                     <img class="image" src=${photographer.portfolio} alt=${photographer.name}/>
                      <p class="age">Popularity: ${photographer.popularity}/5⭐</p>
-
-                     <p class="border">*************************</p>
-
+                     <img class="image" src=${photographer.portfolio} alt=${photographer.name}/>
                       <form class="newShooting">
-                        <h4> Book a shooting with ${photographer.name}</h4> 
+                        <h4> BOOK A SHOOTING WITH ${photographer.name}</h4> 
                         <label for="fname">Date:</label><br>
                         <input type="text" id="fdate" name="date"><br>                    
                         <label for="llocaton">Location:</label><br>
@@ -204,6 +203,8 @@ function renderEntryForm() {
                  </div>
                  <div>
                  </div>`;
+const entryFormDiv = document.querySelector(`#entryform`)
+                 entryFormDiv.append(phoDiv)
 
             const bookPhoForm = phoDiv.querySelector(`form.newShooting`);
 
@@ -251,9 +252,10 @@ function renderEntryForm() {
 
                   divNewBook.innerHTML = `
                             <div class="shootingconfirmed">
-                            <h2> Your shooting is confirmed with ${photographer.name}!</h2> 
+                            <h2> YOUR SHOOTING IS CONFIRMED WITH ${photographer.name}!</h2> 
                             <p><strong>Location:</strong> ${shootingDetails.location}</p><br>
                             <p><strong>Date:</strong> ${shootingDetails.date}</p>
+                            
                             </div>`;
 
                   parentDivCreateBooking.append(divNewBook);
